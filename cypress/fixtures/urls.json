@@ -1,0 +1,5 @@
+{
+    "usersAPI": "https://jsonplaceholder.typicode.com/users",
+    "challengingDom": "https://the-internet.herokuapp.com/challenging_dom",
+    "dynamicLoading": "https://the-internet.herokuapp.com/dynamic_loading"
+}
