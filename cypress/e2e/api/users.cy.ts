@@ -13,7 +13,7 @@ describe('API Tests for User endpoints', () => {
             responseBody = response.body;
             expect(STATUS_CODE).to.eq(200);
             expect(responseBody).to.have.length.greaterThan(0);
-            expect(responseBody[0]).to.deep.eq
+
         });
     });
 
