@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "fe:tests": "npx cypress run --browser chrome --headless --spec 'cypress/e2e/*'",
+    "be:tests": "npx cypress run --browser chrome --headless --spec 'cypress/e2e/api/**/*'",
+    "all:tests": "npx cypress run --browser chrome --headless"
+  },
+
   "devDependencies": {
     "cypress": "^13.6.4",
     "typescript": "^5.3.3"
