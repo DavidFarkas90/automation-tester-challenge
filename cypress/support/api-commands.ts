@@ -1,5 +1,7 @@
 import url from "../fixtures/urls.json";
+import Ajv from "ajv";
 
+const ajv = new Ajv();
 const USERS = url.usersAPI;
 
 Cypress.Commands.add("createUser", () => {
@@ -35,3 +37,15 @@ Cypress.Commands.add("deleteUser", () => {
         });
     });
 });
+
+
+Cypress.Commands.add("validateJsonSchema", (schema, data) => {
+    const validate = ajv.compile(schema);
+    const isValid = validate(data);
+    if (!isValid) {
+      throw new Error(`JSON schema validation failed: ${ajv.errorsText(validate.errors)}`);
+    }
+    else {
+        assert("Schema validation passed!");
+    }
+  });

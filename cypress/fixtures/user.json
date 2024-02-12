@@ -2,6 +2,23 @@
     "testUser": {
         "name": "David",
         "username": "testerDavid",
-        "email": "testingCompany@mail.org"
+        "email": "testingCompany@mail.org",
+        "address": {
+            "street": "Dark street",
+            "suite": "Apt. 123",
+            "city": "Gotham",
+            "zipcode": "92998-3874",
+            "geo": {
+              "lat": "-37.3159",
+              "lng": "81.1496"
+            }
+          },
+          "phone": "1-770-736-8031 x56442",
+          "website": "random.co.org",
+          "company": {
+            "name": "Random company name",
+            "catchPhrase": "Lorem ipsum",
+            "bs": "harness real-time e-markets"
+          }
     }
 }
