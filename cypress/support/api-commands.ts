@@ -38,7 +38,6 @@ Cypress.Commands.add("deleteUser", () => {
     });
 });
 
-
 Cypress.Commands.add("validateJsonSchema", (schema, data) => {
     const validate = ajv.compile(schema);
     const isValid = validate(data);
