@@ -4,9 +4,9 @@
     "be:tests": "npx cypress run --browser chrome --headless --spec 'cypress/e2e/api/**/*'",
     "all:tests": "npx cypress run --browser chrome --headless"
   },
-
   "devDependencies": {
     "cypress": "^13.6.4",
+    "cypress-mochawesome-reporter": "^3.8.1",
     "typescript": "^5.3.3"
   }
 }

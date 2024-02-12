@@ -1,3 +1,5 @@
 node_modules
 downloads
 screenshots
+reports
+.DS_Store
