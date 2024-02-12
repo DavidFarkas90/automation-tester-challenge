@@ -20,8 +20,8 @@ declare global {
 
             // Validate JSON Schema
             /**
-             * @param {object} - JSON object for validation
-             * @param {Response<object>} - Response object for comparison and validation
+             * @param {object} schema - JSON object for validation
+             * @param {Response<object>} data - Response object for comparison and validation
              */
             validateJsonSchema(schema: object, data: Response<object>): void;
         }
