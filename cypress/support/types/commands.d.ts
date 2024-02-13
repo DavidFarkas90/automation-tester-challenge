@@ -13,7 +13,7 @@ declare global {
             /**
              * @param {object} user - user object for editing
              */
-            editUser(user): Chainable;
+            editUser(user: object): Chainable;
 
             // Delete a random user
             deleteUser(): Chainable;
